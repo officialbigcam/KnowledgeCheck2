@@ -18,14 +18,24 @@ namespace KnowledgeCheck2
             for (int i = 0; i < numberOfRecords; i++)
             {
                 // In this loop, populate the object's properties using Console.ReadLine()
-                var myClass = new Cat();
+                var Bleu = new Cat();
 
-                Console.WriteLine("Enter the value for ");
-                myClass. = Console.ReadLine();
+                Console.WriteLine("Type your cat's name to view some of their attributes");
+                Bleu.name = Console.ReadLine();
+
+                Bleu.nightVision = Console.ReadLine();
+
                 
 
 
-                recordList.Add(myClass);
+                recordList.Add(Bleu);
+            }
+
+            foreach (var record in recordList)
+            {
+                Console.WriteLine("This cat's name is " + record.name );
+                Console.WriteLine(" " + record.name + " has " + record.numberOfLegs + " legs");
+                Console.WriteLine(" " + record.name + " has " + record.numberOfEyes + " eyes");
             }
         }
 
